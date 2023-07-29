@@ -23,6 +23,8 @@ public class HtmlValidator {
                 // Se evalúa que las etiquetas correspondan, para posteriormente borrarla de la pila
                 } else if (pilaEtiquetas.peek().matches(etiqueta)) {
                     pilaEtiquetas.pop();
+                }else{
+                    return pilaEtiquetas;
                 }
             }
         }
